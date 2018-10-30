@@ -13,6 +13,12 @@ import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Used to load the 'native-lib' library on application startup.
+    static {
+        System.loadLibrary("native-lib");
+    }
+
+    // views
     @BindView(R.id.tv_result) TextView tvResult;
 
 
@@ -34,10 +40,6 @@ public class MainActivity extends AppCompatActivity {
         // another way to count up
         //        tvResult.setText(""+countUpFromJNIShortVersion(currentValue));
 
-    }
-    // Used to load the 'native-lib' library on application startup.
-    static {
-        System.loadLibrary("native-lib");
     }
 
     @Override
