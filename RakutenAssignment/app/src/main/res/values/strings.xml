@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RakutenAssignment</string>
+    <string name="count_up_number_lbl">Count Up is : </string>
+    <string name="count_up_lbl">Count Up</string>
+</resources>
